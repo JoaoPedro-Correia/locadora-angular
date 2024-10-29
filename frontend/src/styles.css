@@ -1,6 +1,92 @@
-/* You can add global styles to this file, and also import other style files */
-html, body{
-    padding: 0;
+/* Reset básico */
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
+  }
+  
+  /* Corpo geral */
+  body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #007BFF;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a.brand {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: #2C3E50; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    padding-top: 1rem; 
+  }
+  
+  .sidebar nav ul {
+    list-style: none; 
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+    padding: 0.75rem 1.5rem; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar nav ul li a i {
+    margin-right: 10px; 
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: #1ABC9C; 
+  }
+  
+  .sidebar nav ul li a.active-link {
+    background-color: #1ABC9C;
+  }
+  
+  /* Main content */
+  .layout-container {
+    display: flex;
+  }
+  
+  .content {
+    margin-left: 250px;
+    padding: 2rem;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .page-content {
+    margin-top: 1rem;
+  }
+  
